@@ -5,72 +5,96 @@
     <style>
         .papan {
             display: grid;
-            grid-template-columns: auto auto auto auto auto auto auto auto;
-            background-color: #2196F3;
-            padding: 2px;
+            grid-template-columns: repeat(8, auto);
+            grid-template-columns: repeat(8, auto);
+            background-color:rgb(241, 180, 122);
+            margin-left: 33%;
+            padding: 10px;
+            width: 500px;
+            height: 500px;
         }
 
-        .putih {
-            background-color: white;
-            border: 0;
-            padding: 70px;
+        .papan .putih {
+            background-color: rgb(199, 186, 123);
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            /* padding: 30px; */
 
         }
 
-        .hitam {
-            background-color: black;
-            border: 0;
-            padding: 70px;
+        .papan .putih:hover{
+            background-color: yellow;
         }
 
-        h1 {
+        .papan .hitam {
+            background-color: rgb(78, 77, 70);
+            /* padding: 30px; */
+            width: 60px;
+            height: 60px;
+        }
+
+        .papan .hitam:hover{
+            background-color: green;
+        }
+
+
+        .judul {
             text-align: center;
-            font-size: 80px;
+            font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: -60px;
+        }
+        .chess-white{
+            align-items: center;
+            padding: 10px;
+            margin: 9px;
+            color: rgb(255, 255, 255);
+            /* border: solid bla; */
+        }
+
+        .chess-black{
+            align-items: center;
+            padding: 10px;
+            margin: 9px;
+            color: rgb(0, 0, 0);
+            /* border: solid bla; */
         }
     </style>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Papan Catur</h1>
+    <h4>#CLOSETHEDOOR</h3>
+    <h2>CORBUZIER</h2>
+    <p>podcast</p>
+
+    <h1 class="judul">Dewa Kipas VS GM Irene</h1>
+    <!-- <img src="podcast.jpg" alt=""> -->
+    <img class="irene" src="irene.jpg" alt="">
+    <img class="dewa-kipas" src="dewa_kipas.jpg" alt="">
 
 
     <div class="papan">
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
+        <div class="putih"><i class="chess-white fas fa-chess-rook fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-knight fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-bishop fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-king fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-queen fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-bishop fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-knight fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-rook fa-2x" ></i></div>
 
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
-        <div class="hitam"></div>
-        <div class="putih"></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-white fas fa-chess-pawn fa-2x" ></i></div>
 
         <div class="putih"></div>
         <div class="hitam"></div>
@@ -108,8 +132,25 @@
         <div class="hitam"></div>
         <div class="putih"></div>
 
+        
 
+        <div class="putih"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-pawn fa-2x" ></i></div>
 
+        <div class="hitam"><i class="chess-black fas fa-chess-rook fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-knight fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-bishop fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-king fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-queen fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-bishop fa-2x" ></i></div>
+        <div class="hitam"><i class="chess-black fas fa-chess-knight fa-2x" ></i></div>
+        <div class="putih"><i class="chess-black fas fa-chess-rook fa-2x" ></i></div>
     </div>
 
 </body>
